@@ -16,11 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const STORAGE_KEY = "shoppingListItems";
 
     const defaults = [
-        { id: 1, name: "Milk", price: 70, purchased: false },
-        { id: 2, name: "Bread", price: 65, purchased: false },
-        { id: 3, name: "Eggs", price: 240, purchased: false },
-        { id: 4, name: "Sugar", price: 180, purchased: false },
-        { id: 5, name: "Rice", price: 200, purchased: false }
+        { id: 1, name: "Milk", price: 50, purchased: false },
+        { id: 2, name: "Bread", price: 100, purchased: false },
+        { id: 3, name: "Eggs", price: 100, purchased: false },
+        { id: 4, name: "Sugar", price: 200, purchased: false },
+        { id: 5, name: "Rice", price: 100, purchased: false },
+        { id: 6, name: "Cooking Oil", price: 450, purchased: false }
     ];
 
     let items = loadItems();
