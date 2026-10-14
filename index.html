@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>My Shopping List</h1>
+        <p class="subtitle">
+            Add items, track purchases and manage your budget.
+        </p>
+
+        <form id="itemForm">
+            <input type="text" id="itemName"
+                placeholder="Item name" maxlength="100" required>
+
+            <input type="number" id="itemPrice"
+                placeholder="Price (KES)" min="0" step="0.01" required>
+
+            <button type="submit" class="add-btn" id="addBtn">
+                Add
+            </button>
+        </form>
+
+        <section class="summary">
+            <div class="summary-card">
+                <p>Total List Cost</p>
+                <h2 id="totalCost">KES 755.00</h2>
+            </div>
+            <div class="summary-card">
+                <p>Purchased Cost</p>
+                <h2 id="purchasedCost">KES 0.00</h2>
+            </div>
+            <div class="summary-card">
+                <p>Total Items</p>
+                <h2 id="totalItems">5</h2>
+            </div>
+            <div class="summary-card">
+                <p>Purchased Items</p>
+                <h2 id="purchasedItems">0</h2>
+            </div>
+        </section>
+
+        <h3>Your Shopping Items</h3>
+
+        <ul id="shoppingList"></ul>
+
+        <div class="bottom-actions">
+            <button type="button" class="mark-all-btn" id="markAllBtn">
+                Mark Purchased
+            </button>
+            <button type="button" class="clear-btn" id="clearBtn">
+                Clear List
+            </button>
+        </div>
+
+        <p class="note">
+            Your items are saved automatically in this browser.
+        </p>
+    </main>
+</body>
+</html>
